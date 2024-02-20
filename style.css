@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 400px;
     background-color: #70c1b3;
   }
   
@@ -34,7 +34,7 @@
     height: 100%; 
   }
   
-  .container {
+  .dice-container {
     position: relative;
     display: inline-block;
     top: 200px;
