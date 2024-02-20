@@ -60,13 +60,6 @@
   
   .dice-one {
     position: absolute;
-    left: 150px; 
-  }
-  
-  .dice-two {
-    position: absolute;
-    left: -50px;
-    
   }
   
   .side {
