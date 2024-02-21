@@ -15,6 +15,7 @@
     background-color: #f4d35e;
     border: none;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 20px; 
     box-shadow: 1px 3px #50514F;
     outline: none;
@@ -138,3 +139,23 @@
     top: 50%;
     left: 80%; 
   }
+  .popup-get-gift {
+    position: fixed;
+    right: 10px;
+    top: 40vh;
+    z-index: 14;
+    display: none;
+}
+.btn-get-gift {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #00FF00;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn-get-gift:hover {
+  background-color: rgb(233, 214, 101);
+  color: black;
+}
