@@ -26,6 +26,56 @@ elComeOut.onclick = function () {
   }
 
 };
+document.getElementById("btnGetCP").addEventListener("click", function() {
+  var playedStatus = localStorage.getItem('status');
+  let Icoupon = document.getElementById('coupon');
+  let Idescription = document.getElementById('description');  
+  var getCoupon = localStorage.getItem('coupon');
+  var getDes = localStorage.getItem('description');
+  if (playedStatus === 'got') {
+    alert('Bạn đã nhận thưởng rồi!! Mã giảm giá của bạn là: ' + getCoupon)
+
+  }else{
+  $('#modalInfo').modal('hide');
+  $('#modalCoupon').modal('show');
+
+
+  Idescription.innerHTML = 'Bạn đã nhận được: ' + getDes;
+  Icoupon.innerHTML = 'Mã giảm giá của bạn là: ' + getCoupon;
+
+  localStorage.setItem('status', 'got');
+  }
+ 
+
+});
+
+$(document).ready(function() {
+  $("#submitBtn").click(function() {
+    $("#infoForm").submit();
+  });
+
+  $("#infoForm").submit(function(e) {
+    e.preventDefault();
+
+    if (this.checkValidity()) {
+      let Icoupon = document.getElementById('coupon');
+      let Idescription = document.getElementById('description');  
+      var getCoupon = localStorage.getItem('coupon');
+      var getDes = localStorage.getItem('description');
+      $('#modalInfo').modal('hide');
+      $('#modalCoupon').modal('show');
+    
+    
+      Idescription.innerHTML = 'Bạn đã nhận được: ' + getDes;
+      Icoupon.innerHTML = 'Mã giảm giá của bạn là: ' + getCoupon;
+    
+      localStorage.setItem('status', 'got');
+
+    } else {
+      alert('Form không hợp lệ. Vui lòng kiểm tra lại thông tin của bạn.');
+    }
+  });
+});
 
 function rollWeightedDice() {
   var weightedResults = {
@@ -67,7 +117,7 @@ function updateDiceDisplay(result) {
 function getInfo() {
 
     var coupon = checkPoint(diceOne);
-    $('#modalCoupon').modal('show');
+    $('#modalInfo').modal('show');
     localStorage.setItem('status', 'played');
     localStorage.setItem('dice', diceOne);
     localStorage.setItem('coupon', coupon.code);
