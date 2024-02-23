@@ -1,17 +1,21 @@
 .bg-lay{
 
 }
-.text-decoration-none{
+.voucher-game{
+  width: 100px;
+  height: 160px;
+}
+.text-a{
   text-decoration: none;
   color: black;
   transition: transform 0.3s ease;
 }
-.text-decoration-none:hover{
+.text-a:hover{
   text-decoration: none;
   transform: scale(1.1);
   color: black;
 }
-.text-decoration-none:hover img {
+.text-a:hover img {
   transform: scale(1.04); /* Phóng to hình ảnh 10% khi hover */
   transition: transform 0.4s ease; /* Hiệu ứng chuyển động trơn tru */
 }
@@ -23,13 +27,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.bg-game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: #70c1b3;
-  }
+
   
   .btn-roll {
     position: relative;
@@ -64,19 +62,19 @@
   }
   
   .dice {
-    left: -52px;
+    left: -101px;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     transform-style: preserve-3d;
     transition: transform 1s; 
   }
   
   .dot {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    margin: -10px 5px 5px -10px;
+    width: 40px;
+    height: 40px;
+    margin: -20px 15px 15px -20px;
     border-radius: 20px;
     background-color: #f25f5c;
     box-shadow: inset 2px 2px #d90429;
@@ -90,30 +88,30 @@
     position: absolute;
     background-color: #ffF;
     border-radius:5px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #e5e5e5;
     text-align: center;
     line-height: 2em;
   }
   
   .side:nth-child(1) {
-    transform: translateZ(3.1em); }
+    transform: translateZ(6.2em); }
   
   .side:nth-child(6) {
-    transform: rotateY(90deg) translateZ(3.1em); }
+    transform: rotateY(90deg) translateZ(6.2em); }
   
   .side:nth-child(3) {
-    transform: rotateY(-90deg) translateZ(3.1em); }
+    transform: rotateY(-90deg) translateZ(6.2em); }
   
   .side:nth-child(4) {
-    transform: rotateX(90deg) translateZ(3.1em); }
+    transform: rotateX(90deg) translateZ(6.2em); }
   
   .side:nth-child(5) {
-    transform: rotateX(-90deg) translateZ(3.1em); }
+    transform: rotateX(-90deg) translateZ(6.2em); }
   
   .side:nth-child(2) {
-    transform: rotateY(-180deg) translateZ(3.1em); }
+    transform: rotateY(-180deg) translateZ(6.2em); }
   
   .show-1 {
     transform: rotateX(720deg) rotateZ(-720deg); }
@@ -241,4 +239,19 @@
   color: #fff !important;
 }
 .thelect{
+}
+/* CSS */
+@keyframes blinkAndZoom {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.congratulations-effect {
+  animation: blinkAndZoom 3s linear infinite; /* Thời gian 3 giây, chế độ linear và lặp vô hạn */
 }

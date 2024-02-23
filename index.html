@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
     <!-- DataTables CSS và JS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -21,16 +22,16 @@
 <body style="background-color: antiquewhite;">
 
     <div>
-        <img width="100%" height="auto" src="https://lh3.googleusercontent.com/DVm_ItOn8KgOFiOj03mMDeq2bsnvQaKqY2j_AANTeH5RjZQqIRbxFdEEBnuBGDcefM4bf5s_opIs7aacuDp8a65o4fuACN4=rw-w2304" alt="">
+        <img width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/banner-1708678997.jpg" alt="">
     </div>
-    <div class="container thelect">
+    <div class="container mt-4 p-2 bg-secondary">
       <div class="row">
-        <div class="col-md-4">
-          <div id='roll' class='roll-button'>
-            <button class="btn-roll">Thử vận may!</button>
-          </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <img class="voucher-game voucher-game1" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/1-1708677127.png" alt="">
+          <img class="voucher-game voucher-game2 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/2-1708677127.png" alt="">
+          <img class="voucher-game voucher-game3 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/3-1708677127.png" alt="">
         </div>
-        <div class="col-md-4" style="height: 360px;">
+        <div class="col-md-4" style="height: 240px;">
           <div class="d-flex justify-content-center align-item-center">
             <div class="game">
                 <div class="dice-container">
@@ -71,12 +72,35 @@
                   </div>
                </div>
               </div> 
+          </div>
         </div>
-        </div>
-        <div class="col-md-4">
-        
+        <div class="col-md-4 d-flex justify-content-center ">
+          <img class="voucher-game voucher-game4 " src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/4-1708677127.png" alt="">
+          <img class="voucher-game voucher-game5 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/5-1708677127.png" alt="">
+          <img class="voucher-game voucher-game6 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/6-1708677127.png" alt="">
         </div>
       </div>
+      <div id='roll' class='roll-button d-flex justify-content-center'>
+        <button class="btn-roll">Thử vận may!</button>
+      </div>
+      <!-- <div class="d-flex justify-content-center">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center">
+          <img class="voucher-game voucher-game1" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/1-1708677127.png" alt="">
+          <img class="voucher-game voucher-game2 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/2-1708677127.png" alt="">
+          <img class="voucher-game voucher-game3 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/3-1708677127.png" alt="">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img class="voucher-game voucher-game4 " src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/4-1708677127.png" alt="">
+          <img class="voucher-game voucher-game5 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/5-1708677127.png" alt="">
+          <img class="voucher-game voucher-game6 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/6-1708677127.png" alt="">
+        </div>
+      </div>
+      </div> -->
+
+    </div>
+    <div class="popup-get-gift" id="get-coupon">
+      <button class="btn-get-gift" id="btnGetCP"><i class="fa fa-gift" aria-hidden="true" style="font-size: 40px;"></i></button>
     </div>
     <div class="container mt-4 bg-lay">
       <h2>DANH SÁCH TRÚNG THƯỞNG</h2>
@@ -130,8 +154,8 @@
       <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-new-1708671629.png" alt="">
       <div class="owl-carousel border-radius-bot" style="background-color: #ffac05;">
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -141,8 +165,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -152,8 +176,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -163,8 +187,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -174,8 +198,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -185,8 +209,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -202,8 +226,8 @@
       <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-gaming-1708671629.png" alt="">
       <div class="owl-carousel border-radius-bot" style="background-color: #f98c15;">
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -213,8 +237,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -224,8 +248,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -235,8 +259,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -246,8 +270,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -257,8 +281,8 @@
           </a>  
         </div>
         <div class="item">
-          <a class="text-decoration-none" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-            <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+            <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
             <p class="name-prd text-limit">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
             <p class="price-prd">17.900.000đ</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -274,8 +298,8 @@
       <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-old-1708671629.png" alt="">
       <div class="owl-carousel border-radius-bot" style="background-color: #271b44;">
         <div class="item">
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -284,8 +308,8 @@
           </div>
         </a>
         </div>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -293,8 +317,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -302,8 +326,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -311,8 +335,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -320,8 +344,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -335,8 +359,8 @@
     <div class="container mt-4">
       <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/pc-gaming-1708671629.png" alt="">
       <div class="owl-carousel border-radius-bot" style="background-color: #4f3391;"> 
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -344,8 +368,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -353,8 +377,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -362,8 +386,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -371,8 +395,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -380,8 +404,8 @@
             <p class="percent float-left percent">-15%</p>
           </div>
         </a>
-          <a class="text-decoration-none text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
-          <img height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
+          <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
+          <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
           <p class="name-prd text-limit text-white">Dell Latitude 3440 Core i7-1355U | RAM 16GB | SSD 256GB | 14 inch FHD (1920x1080) - New Fullbox 100%</p>
           <p class="price-prd">17.900.000đ</p>
           <div class="d-flex justify-content-center align-items-center">
@@ -392,9 +416,7 @@
 
       </div>
     </div>
-    <div class="popup-get-gift" id="get-coupon">
-      <button class="btn-get-gift" id="btnGetCP">Nhận thưởng ngay</button>
-  </div>
+
   <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">

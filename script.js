@@ -19,31 +19,77 @@ elComeOut.onclick = function () {
     alert('Mỗi người chơi chỉ có 1 lượt thử vận may!!!')
   }else{
     rollWeightedDice();
+
+    if(diceOne == 1){
+      setTimeout(function() {
+      $('.voucher-game1').addClass('congratulations-effect');
+  
+      }, 1500);
+      setTimeout(function() {
+        $('.voucher-game1').removeClass('congratulations-effect');
+        }, 2500);
+    }
+    if(diceOne == 2){
+      setTimeout(function() {
+      $('.voucher-game5').addClass('congratulations-effect');
+  
+      }, 1500);
+      setTimeout(function() {
+        $('.voucher-game5').removeClass('congratulations-effect');
+        }, 2500);
+    }
+    if(diceOne == 3){
+      setTimeout(function() {
+      $('.voucher-game6').addClass('congratulations-effect');
+  
+      }, 1500);
+      setTimeout(function() {
+        $('.voucher-game6').removeClass('congratulations-effect');
+        }, 2500);
+    }
+    if(diceOne == 4){
+      setTimeout(function() {
+      $('.voucher-game3').addClass('congratulations-effect');
+  
+      }, 1500);
+      setTimeout(function() {
+        $('.voucher-game3').removeClass('congratulations-effect');
+        }, 2500);
+    }
+    if(diceOne == 5){
+      setTimeout(function() {
+      $('.voucher-game4').addClass('congratulations-effect');
+  
+      }, 1500);
+      setTimeout(function() {
+        $('.voucher-game4').removeClass('congratulations-effect');
+        }, 2500);
+    }
+    if(diceOne == 6){
+      setTimeout(function() {
+      $('.voucher-game2').addClass('congratulations-effect');
+  
+      }, 1500)
+      setTimeout(function() {
+        $('.voucher-game2').removeClass('congratulations-effect');
+        }, 2500);
+    }
+      
     setTimeout(function () {
       getInfo();
       handlePageLoad() 
-    }, 1500);
+    }, 3000);
   }
 
 };
 document.getElementById("btnGetCP").addEventListener("click", function() {
   var playedStatus = localStorage.getItem('status');
-  let Icoupon = document.getElementById('coupon');
-  let Idescription = document.getElementById('description');  
   var getCoupon = localStorage.getItem('coupon');
-  var getDes = localStorage.getItem('description');
   if (playedStatus === 'got') {
     alert('Bạn đã nhận thưởng rồi!! Mã giảm giá của bạn là: ' + getCoupon)
 
   }else{
-  $('#modalInfo').modal('hide');
-  $('#modalCoupon').modal('show');
-
-
-  Idescription.innerHTML = 'Bạn đã nhận được: ' + getDes;
-  Icoupon.innerHTML = 'Mã giảm giá của bạn là: ' + getCoupon;
-
-  localStorage.setItem('status', 'got');
+  $('#modalInfo').modal('show');
   }
  
 
