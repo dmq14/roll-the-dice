@@ -1,3 +1,28 @@
+.bg-lay{
+
+}
+.text-decoration-none{
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease;
+}
+.text-decoration-none:hover{
+  text-decoration: none;
+  transform: scale(1.1);
+  color: black;
+}
+.text-decoration-none:hover img {
+  transform: scale(1.04); /* Phóng to hình ảnh 10% khi hover */
+  transition: transform 0.4s ease; /* Hiệu ứng chuyển động trơn tru */
+}
+.border-radius-top{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.border-radius-bot{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .bg-game {
     display: flex;
     justify-content: center;
@@ -8,8 +33,6 @@
   
   .btn-roll {
     position: relative;
-    top:80px;
-    left:10px;
     padding: 15px 50px;
     color: #fff;
     background-color: #f4d35e;
@@ -38,10 +61,10 @@
   .dice-container {
     position: relative;
     display: inline-block;
-    top: 200px;
   }
   
   .dice {
+    left: -52px;
     position: relative;
     width: 100px;
     height: 100px;
@@ -158,4 +181,64 @@
 .btn-get-gift:hover {
   background-color: rgb(233, 214, 101);
   color: black;
+}
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .owl-carousel .owl-nav button {
+    font-size: 50px !important;
+    /* position: absolute; */
+  }
+
+  .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+  }
+  .name-prd{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .price-prd{
+    color: #ff002b;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .percent {
+    background-color: #FFB6C1;
+    color: #ff0000;
+    border-radius: 11px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.text-limit {
+  max-height: 3em; /* Đặt chiều cao tối đa tương đương với 3 dòng */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi vượt quá chiều cao */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Số dòng hiển thị tối đa */
+  -webkit-box-orient: vertical;
+  position: relative; /* Tạo không gian cho dấu "..." */
+}
+
+.text-limit::after {
+  content: '..'; /* Thêm dấu "..." vào cuối */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 5px; 
+  background: none;
+}
+.text-white{
+  color: #fff !important;
+}
+.thelect{
 }

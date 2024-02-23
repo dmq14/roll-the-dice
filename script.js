@@ -155,3 +155,47 @@ function checkPoint() {
     }
     return coupon;
 }
+
+
+$(document).ready(function() {
+  $('#DSTTDICE').DataTable({
+    "language": {
+      "lengthMenu": "Hiển thị _MENU_ dòng",
+      "zeroRecords": "Không tìm thấy dữ liệu",
+      "info": "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+      "infoEmpty": "Hiển thị 0 đến 0 của 0 dòng",
+      "infoFiltered": "(được lọc từ _MAX_ tổng số dòng)",
+      "search": "Tìm kiếm:",
+      "paginate": {
+        "first": "Đầu tiên",
+        "previous": "Trước",
+        "next": "Tiếp",
+        "last": "Cuối cùng"
+      }
+    }
+  });
+});
+
+
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 5, // Số lượng sản phẩm hiển thị trên mỗi trang
+      loop: true, // Lặp lại carousel
+      margin: 10, // Khoảng cách giữa các sản phẩm
+      autoplay: true, // Tự động chạy
+      autoplayTimeout: 5000, 
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    });
+  });
