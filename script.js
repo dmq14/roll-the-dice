@@ -125,12 +125,12 @@ $(document).ready(function() {
 
 function rollWeightedDice() {
   var weightedResults = {
-    1: 0.2, //1
-    2: 0.2, //5
-    3: 0, //6
-    4: 0.2, //3
-    5: 0.2, //4
-    6: 0.2   //2
+    1: 0.15, //100k
+    2: 0.05, //500k
+    3: 0, //600k
+    4: 0.3, //300k
+    5: 0.2, //400k
+    6: 0.3   //200k
   };
 
   var totalWeight = Object.values(weightedResults).reduce((a, b) => a + b, 0);

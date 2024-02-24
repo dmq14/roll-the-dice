@@ -19,19 +19,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<body style="background-color: antiquewhite;">
-
-    <div>
-        <img width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/banner-1708678997.jpg" alt="">
+<body style="background-color: #fcd5ce;">
+    <div class="background-container">
+      <img class="background-image" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/bg-1708746181.png" alt="background">
     </div>
-    <div class="container mt-4 p-2 bg-secondary">
+    <div>
+        <img width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/banner-1708678997.jpg" alt="main banner">
+    </div>
+
+    <div class="container mt-4 ">
+      <div class="p-3 bg-game border-radius">
       <div class="row">
-        <div class="col-md-4 d-flex justify-content-center">
-          <img class="voucher-game voucher-game1" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/1-1708677127.png" alt="">
-          <img class="voucher-game voucher-game2 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/2-1708677127.png" alt="">
-          <img class="voucher-game voucher-game3 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/3-1708677127.png" alt="">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <img class="voucher-game voucher-game1" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/1-1708677127.png" alt="voucher 100K">
+          <img class="voucher-game voucher-game2 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/2-1708677127.png" alt="voucher 200K">
+          <img class="voucher-game voucher-game3 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/3-1708677127.png" alt="voucher 300K">
         </div>
-        <div class="col-md-4" style="height: 240px;">
+        <div class="col-lg-4" style="height: 240px;">
           <div class="d-flex justify-content-center align-item-center">
             <div class="game">
                 <div class="dice-container">
@@ -74,84 +78,183 @@
               </div> 
           </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center ">
-          <img class="voucher-game voucher-game4 " src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/4-1708677127.png" alt="">
-          <img class="voucher-game voucher-game5 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/5-1708677127.png" alt="">
-          <img class="voucher-game voucher-game6 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/6-1708677127.png" alt="">
+        <div class="col-lg-4 d-flex justify-content-center ">
+          <img class="voucher-game voucher-game4 " src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/4-1708677127.png" alt="voucher 400K">
+          <img class="voucher-game voucher-game5 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/5-1708677127.png" alt="voucher 500K">
+          <img class="voucher-game voucher-game6 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/6-1708677127.png" alt="voucher 600K">
         </div>
       </div>
-      <div id='roll' class='roll-button d-flex justify-content-center'>
+      <div id='roll' class='roll-button d-flex justify-content-center mt-2'>
         <button class="btn-roll">Thử vận may!</button>
       </div>
-      <!-- <div class="d-flex justify-content-center">
-        <div class="row">
-          <div class="col-md-6 d-flex justify-content-center">
-          <img class="voucher-game voucher-game1" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/1-1708677127.png" alt="">
-          <img class="voucher-game voucher-game2 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/2-1708677127.png" alt="">
-          <img class="voucher-game voucher-game3 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/3-1708677127.png" alt="">
-        </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <img class="voucher-game voucher-game4 " src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/4-1708677127.png" alt="">
-          <img class="voucher-game voucher-game5 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/5-1708677127.png" alt="">
-          <img class="voucher-game voucher-game6 ml-4" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/6-1708677127.png" alt="">
-        </div>
-      </div>
-      </div> -->
+    </div>
 
     </div>
     <div class="popup-get-gift" id="get-coupon">
       <button class="btn-get-gift" id="btnGetCP"><i class="fa fa-gift" aria-hidden="true" style="font-size: 40px;"></i></button>
     </div>
-    <div class="container mt-4 bg-lay">
-      <h2>DANH SÁCH TRÚNG THƯỞNG</h2>
-      <table id="DSTTDICE" class="table table-striped table-bordered">
-        <thead>
-          <tr>
-            <th>Thời Gian</th>
-            <th>Tên</th>
-            <th>Số Điện Thoại</th>
-            <th>Voucher</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Cristiano Ronalsi</td>
-            <td>1234567890</td>
-            <td>ABC123</td>
-          </tr>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Cristiano Ronalsi</td>
-            <td>1234567890</td>
-            <td>ABC123</td>
-          </tr>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Cristiano Ronalsi</td>
-            <td>1234567890</td>
-            <td>ABC123</td>
-          </tr>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Cristiano Ronalsi</td>
-            <td>1234567890</td>
-            <td>ABC123</td>
-          </tr>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Cristiano Ronalsi</td>
-            <td>1234567890â</td>
-            <td>ABC123</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-lg-6 p-3 bg-opacity border-thele mt-4" >
+          <h2 class="text-center">THỂ LỆ CHƯƠNG TRÌNH</h2>
+          <div class="scroll" >
+            <p style="font-size: 18px">
+              - Số lần tham gia trò chơi: 01 lần<br />
+              - Người chơi tham gia thử vận may. Số nút trên xí ngầu sẽ tương ứng là giải thưởng mà khách hàng nhận được bao gồm các giá Voucher giảm giá như sau:<br />
+              + Tung được 1 nút: bạn sẽ nhận được mã giảm giá 100K.<br />
+              + Tung được 2 nút: bạn sẽ nhận được mã giảm giá 200K.<br />
+              + Tung được 3 nút: bạn sẽ nhận được mã giảm giá 300K.<br />
+              + Tung được 4 nút: bạn sẽ nhận được mã giảm giá 400K.<br />
+              + Tung được 5 nút: bạn sẽ nhận được mã giảm giá 500K.<br />
+              + Tung được 6 nút: bạn sẽ nhận được mã giảm giá 700K.<br />
+              *Lưu ý: Mã Voucher giảm giá này chỉ áp dụng khi mua các sản phẩm laptop, PC hóa đơn trên 5 triệu tại Khóa Vàng (Không áp dụng khi mua linh - phụ kiện).<br />
+              + Voucher giảm giá của chương trình không được dùng đồng thời các voucher khác khi mua sản phẩm tại Khoá Vàng.<br />
+              + Voucher áp dụng cho cả mua online và offline tại Khoá Vàng. Trong trường hợp, nhân viên sale của Khoá Vàng không biết thông tin ưu đãi của bạn. Khách hàng xin vui lòng cung cấp thông tin nhận ưu đãi thông qua số điện thoại và họ - tên khi đăng ký tham gia trò chơi. Khóa Vàng xin trân trọng cảm ơn quý khách hàng.<br />
+              + Khóa Vàng có quyền cập nhật thể lệ chương trình khuyến mãi, kiểm tra và từ chối các hành vi gian lận hoặc các trường hợp khác. Đồng thời có quyền yêu cầu xuất trình thẻ thông tin cá nhân, chứng minh thư của khách hàng sử dụng ưu đãi của chương trình khi cần thiết.<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3 bg-opacity border-ds mt-4" style="background-color: #fff;">
+          <h2 class="text-center">DANH SÁCH THAM GIA </h2>
+          <table id="DSTTDICE" class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>Thời Gian</th>
+                <th>Tên</th>
+                <th>Số Điện Thoại</th>
+                <th>Voucher</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>Cristiano Ronalsi</td>
+                <td>1234567890â</td>
+                <td>ABC123</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <div class="container mt-4 bg-lay">
-      <h2>Thể lệ chương trình </h2>
-    </div>
+
+
     <div class="container mt-4">
-      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-new-1708671629.png" alt="">
+      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-new-1708671629.png" alt="banner laptop new">
       <div class="owl-carousel border-radius-bot" style="background-color: #ffac05;">
         <div class="item">
           <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
@@ -223,7 +326,7 @@
       </div>
     </div>
     <div class="container mt-4">
-      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-gaming-1708671629.png" alt="">
+      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-gaming-1708671629.png" alt="banner laptop gaming">
       <div class="owl-carousel border-radius-bot" style="background-color: #f98c15;">
         <div class="item">
           <a class="text-a" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
@@ -295,7 +398,7 @@
       </div>
     </div>
     <div class="container mt-4">
-      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-old-1708671629.png" alt="">
+      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/laptop-old-1708671629.png" alt="banner laptop like new">
       <div class="owl-carousel border-radius-bot" style="background-color: #271b44;">
         <div class="item">
           <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
@@ -357,7 +460,7 @@
       </div>
     </div>
     <div class="container mt-4">
-      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/pc-gaming-1708671629.png" alt="">
+      <img class="border-radius-top" width="100%" height="auto" src="https://khoavang.vn/resources/uploads/banner/banner-game-dice/pc-gaming-1708671629.png" alt="banner pc gaming">
       <div class="owl-carousel border-radius-bot" style="background-color: #4f3391;"> 
           <a class="text-a text-white" href="https://khoavang.vn/dell-latitude-7440-2023-core-i5-1350p-p3839.html ">
           <img class="rounded" height="auto" width="100%" src="https://khoavang.vn/resources/cache/210x210x3/data/7680/DELL-Precision-7680-Mobile-Workstation-2023-H1-500x500-1-1701838043.webp" alt="Product 1">
