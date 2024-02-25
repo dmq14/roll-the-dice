@@ -3,23 +3,22 @@ body {
   padding: 0;
   overflow-y: scroll;
 }
-
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.bg-laptop-new{
+  background-color: #ffac05;
+}
+.bg-laptop-gaming{
+  background-color: #f98c15;
+}
+.bg-laptop-old{
+  background-color: #271b44;
+}
+.bg-pc-gaming{
+  background-color: #4f3391;
 }
 .f-table{
   font-size: 12px;
 }
-.background-image {
-  width: 100%;
-  height: auto;
-  margin-top: 150px;
-}
+
 .voucher-game{
   width: 100px;
   height: 160px;
@@ -314,9 +313,7 @@ body {
  .border-ds, .border-thele{
   border-radius: 15px;
  }
- .background-container{
-  display: none;
- }
+
  .f-table{
   font-size: 11px;
 }
