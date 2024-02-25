@@ -21,7 +21,6 @@ elComeOut.onclick = function () {
     alert('Mỗi người chơi chỉ có 1 lượt thử vận may!!!')
   }else{
     rollWeightedDice();
-
     if(diceOne == 1){
       setTimeout(function() {
       $('.voucher-game1').addClass('congratulations-effect');
@@ -164,10 +163,10 @@ function updateDiceDisplay(result) {
   }
 }
 function getInfo() {
-
+    var gameDiceElement1 = document.getElementById("gameDice");
     var coupon = checkPoint(diceOne);
     $('#modalInfo').modal('show');
-    gameDiceElement.classList.add("d-none");
+    gameDiceElement1.style.display = "none";
     localStorage.setItem('status', 'played');
     localStorage.setItem('dice', diceOne);
     localStorage.setItem('coupon', coupon.code);
