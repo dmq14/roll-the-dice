@@ -8,7 +8,7 @@ function handlePageLoad() {
   var playedStatus = localStorage.getItem('status');
   var getGiftElement = document.getElementById('get-coupon');
   gameDiceElement.classList.remove("d-none");
-    if (playedStatus === 'played') {
+    if (playedStatus === 'played' || playedStatus === 'got') {
       getGiftElement.style.display = 'block';
 
     }else{
