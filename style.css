@@ -12,7 +12,9 @@ body {
   height: 100%;
   z-index: -1;
 }
-
+.f-table{
+  font-size: 12px;
+}
 .background-image {
   width: 100%;
   height: auto;
