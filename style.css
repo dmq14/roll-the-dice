@@ -95,7 +95,6 @@ body {
     height: 200px;
     transform-style: preserve-3d;
     transition: transform 1s; 
-    z-index: 0;
   }
   
   .dot {

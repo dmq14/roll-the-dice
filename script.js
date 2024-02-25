@@ -1,11 +1,13 @@
 var elDiceOne = document.getElementById('dice1');
 var elComeOut = document.getElementById('roll');
 var elInfoForm = document.getElementById('infoForm');
+var gameDiceElement = document.getElementById("gameDice");
 var diceOne;
 window.addEventListener('load', handlePageLoad);
 function handlePageLoad() {
   var playedStatus = localStorage.getItem('status');
   var getGiftElement = document.getElementById('get-coupon');
+  gameDiceElement.classList.remove("d-none");
     if (playedStatus === 'played') {
       getGiftElement.style.display = 'block';
 
@@ -90,6 +92,7 @@ document.getElementById("btnGetCP").addEventListener("click", function() {
 
   }else{
   $('#modalInfo').modal('show');
+  gameDiceElement.classList.add("d-none");
   }
  
 
@@ -110,7 +113,7 @@ $(document).ready(function() {
       var getDes = localStorage.getItem('description');
       $('#modalInfo').modal('hide');
       $('#modalCoupon').modal('show');
-    
+      gameDiceElement.classList.add("d-none");
     
       Idescription.innerHTML = 'Bạn đã nhận được: ' + getDes;
       Icoupon.innerHTML = 'Mã giảm giá của bạn là: ' + getCoupon;
@@ -164,6 +167,7 @@ function getInfo() {
 
     var coupon = checkPoint(diceOne);
     $('#modalInfo').modal('show');
+    gameDiceElement.classList.add("d-none");
     localStorage.setItem('status', 'played');
     localStorage.setItem('dice', diceOne);
     localStorage.setItem('coupon', coupon.code);
