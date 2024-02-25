@@ -318,4 +318,7 @@ body {
  .background-container{
   display: none;
  }
+ .f-table{
+  font-size: 11px;
+}
 }
