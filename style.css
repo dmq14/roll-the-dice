@@ -188,7 +188,7 @@ body {
   }
   .popup-get-gift {
     position: fixed;
-    right: 25px;
+    right: 20px;
     top: 40vh;
     z-index: 14;
     display: none;
