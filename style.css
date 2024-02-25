@@ -93,6 +93,7 @@ body {
     height: 200px;
     transform-style: preserve-3d;
     transition: transform 1s; 
+    z-index: 0;
   }
   
   .dot {
@@ -187,7 +188,7 @@ body {
   }
   .popup-get-gift {
     position: fixed;
-    right: 10px;
+    right: 25px;
     top: 40vh;
     z-index: 14;
     display: none;
