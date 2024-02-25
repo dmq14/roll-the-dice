@@ -178,25 +178,25 @@ function checkPoint() {
     };
     
     if (diceOne == 1) {
-        coupon.code = 'SALE-Q100';
+        coupon.code = 'SALE-KV100K';
         coupon.description = 'Coupon giá trị 100K';
     } else if (diceOne == 6) {
-        coupon.code = 'SALE-E200';
+        coupon.code = 'KV-200K';
         coupon.description = 'Coupon giá trị 200K';
     } else if (diceOne == 4) {
-        coupon.code = 'SALE-T300';
+        coupon.code = 'SALE-300K';
         coupon.description = 'Coupon giá trị 300K';
     } else if (diceOne == 5) {
-        coupon.code = 'SALE-Y400';
+        coupon.code = '2024-400K';
         coupon.description = 'Coupon giá trị 400K';
     } else if (diceOne == 2) {
-        coupon.code = 'SALE-P500';
+        coupon.code = 'KM-500K';
         coupon.description = 'Coupon giá trị 500K';
     } else if (diceOne == 3) {
-        coupon.code = 'SALE-M600';
+        coupon.code = 'FL-SALE-600';
         coupon.description = 'Coupon giá trị 600K';
     }  else {
-        coupon.code = 'SALE-CD34';
+        coupon.code = 'SALE-KV100K';
         coupon.description = 'Coupon giá trị 100K';
     }
     return coupon;
