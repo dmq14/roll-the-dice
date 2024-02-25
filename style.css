@@ -312,4 +312,7 @@ body {
  .border-ds, .border-thele{
   border-radius: 15px;
  }
+ .background-container{
+  display: none;
+ }
 }
